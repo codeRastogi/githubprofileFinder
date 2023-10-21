@@ -7,14 +7,14 @@ $(document).ready(function(){
           url:'https://api.github.com/users/'+username,
           data:{
             client_id:'f2bac5ed750cefed2415',
-            client_secret:'b3fe4bb5f868182c347d5a348ccacb546d0996d7'
+            client_secret:'18d1b9e458778023815ab88c171d96aacba82277'
           }
       }).done(function(user){
         $.ajax({
           url:'https://api.github.com/users/'+username+'/repos',
           data:{
             client_id:'f2bac5ed750cefed2415',
-            client_secret:'b3fe4bb5f868182c347d5a348ccacb546d0996d7',
+            client_secret:'18d1b9e458778023815ab88c171d96aacba82277',
             sort: 'created: asc',
             per_page: 5
           }
